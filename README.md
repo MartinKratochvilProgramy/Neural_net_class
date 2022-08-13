@@ -1,1 +1,1 @@
-#Neural net class
+# Neural net class
