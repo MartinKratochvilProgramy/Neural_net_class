@@ -26,3 +26,12 @@ Calculate prediction using custom input vector:
 ```python
 nn.predict(input_vector)
 ```
+# Create and train your models in a couple of lines of code
+```python
+nn = Neural_net(8, (32, 16), 2) 
+nn.load_data('input.csv', 0.8)
+nn.train_model(150, 1., 'convergence')
+nn.save_model('neural_net')
+nn.load_model('model name')
+nn.predict(input_vector)
+```
