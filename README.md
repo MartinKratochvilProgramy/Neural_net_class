@@ -15,7 +15,7 @@ Train data for 150 epochs and end training if mean-squared error is less than 1%
 ```python
 nn.train_model(150, 1., 'convergence')
 ```
-Save model with name 'neural_net_8(32, 16)2'
+Save model as 'neural_net_8(32, 16)2'
 ```python
 nn.save_model('neural_net')
 ```
