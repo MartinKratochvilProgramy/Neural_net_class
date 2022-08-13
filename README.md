@@ -3,6 +3,16 @@ Neural net class abstracts most of the boilerplate code required to create neura
 # How to use
 Clone the repo and include class in your project.
 
+# Create and train your models in a couple of lines of code
+```python
+nn = Neural_net(8, (32, 16), 2) 
+nn.load_data('input.csv', 0.8)
+nn.train_model(150, 1., 'convergence')
+nn.save_model('neural_net')
+nn.load_model('model name')
+prediction = nn.predict(input_vector)
+```
+
 Initialize a neural net with 8 input neurons, 2 output neurons and two layer with 32 and 16 neurons:
 ```python
 nn = Neural_net(8, (32, 16), 2) 
@@ -25,14 +35,5 @@ nn.load_model('model name')
 ```
 Calculate prediction using custom input vector, returns predicted vector:
 ```python
-prediction = nn.predict(input_vector)
-```
-# Create and train your models in a couple of lines of code
-```python
-nn = Neural_net(8, (32, 16), 2) 
-nn.load_data('input.csv', 0.8)
-nn.train_model(150, 1., 'convergence')
-nn.save_model('neural_net')
-nn.load_model('model name')
 prediction = nn.predict(input_vector)
 ```
