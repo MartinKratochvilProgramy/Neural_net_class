@@ -1,7 +1,7 @@
 # Neural net class
 Neural net class abstracts most of the boilerplate code required to create neural net using keras library. By default code uses 'adam' optimizer, ReLU activation function and mean-squared error - this can be changed in the __init__ method.
 
-# Create and train your models in a couple of lines of code
+# Create and train your models in couple of lines of code
 ```python
 nn = Neural_net(8, (32, 16), 2) 
 nn.load_data('input.csv', 0.8)
