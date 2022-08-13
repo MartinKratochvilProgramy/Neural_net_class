@@ -24,7 +24,7 @@ nn.load_model('model name')
 ```
 Calculate prediction using custom input vector, returns predicted vector:
 ```python
-nn.predict(input_vector)
+prediction = nn.predict(input_vector)
 ```
 # Create and train your models in a couple of lines of code
 ```python
