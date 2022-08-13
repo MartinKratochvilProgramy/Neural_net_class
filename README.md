@@ -1,5 +1,5 @@
 # Neural net class
-Neural net class abstracts most of the boilerplate code required to create neural net using keras library. By default code uses 'adam' optimizer, ReLU activation function and mean-squared error. Definitions can be changed in the __init__ method.
+Neural net class abstracts most of the boilerplate code required to create neural net using keras library. By default code uses 'adam' optimizer, ReLU activation function and mean-squared error - this can be changed in the __init__ method.
 # How to use
 Clone the repo and include class in your project.
 Create neural net with 8 input neurons, 2 output neurons and two layer with 32 and 16 neurons:
