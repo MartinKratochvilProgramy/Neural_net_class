@@ -22,7 +22,7 @@ Load neural net:
 ```python
 nn.load_model('model name')
 ```
-Calculate prediction using custom input vector:
+Calculate prediction using custom input vector, returns predicted vector:
 ```python
 nn.predict(input_vector)
 ```
@@ -33,5 +33,5 @@ nn.load_data('input.csv', 0.8)
 nn.train_model(150, 1., 'convergence')
 nn.save_model('neural_net')
 nn.load_model('model name')
-nn.predict(input_vector)
+prediction = nn.predict(input_vector)
 ```
