@@ -13,7 +13,7 @@ prediction = nn.predict(input_vector)
 # How to use
 Clone the repo and include class in your project.
 
-Initialize a neural net with 8 input neurons, 2 output neurons and two layer with 32 and 16 neurons:
+Initialize a neural net with 8 input neurons, 2 output neurons and two layers with 32 and 16 neurons:
 ```python
 nn = Neural_net(8, (32, 16), 2) 
 ```
