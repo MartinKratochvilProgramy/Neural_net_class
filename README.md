@@ -33,7 +33,7 @@ Load neural net:
 ```python
 nn.load_model('model name')
 ```
-Calculate prediction using custom input vector, returns predicted vector:
+Calculate prediction using custom input vector, returns predicted vector with size depending on the original neural net structure:
 ```python
 prediction = nn.predict(input_vector)
 ```
