@@ -21,7 +21,7 @@ Load data from csv file. Csv file has to be structured according to the neural n
 ```python
 nn.load_data('input.csv', 0.8)
 ```
-Train data for 150 epochs and end training if mean-squared error is less than 1%. Training plot will be saved as 'convergence(32,16).jpg':
+Train data takes number of epochs, mean-squared error limit to stop training and name of the MSE training progress plot. In this example train model for 150 epochs and end training if mMSE is less than 1%. Training plot will be saved as 'convergence(32,16).jpg':
 ```python
 nn.train_model(150, 1., 'convergence')
 ```
