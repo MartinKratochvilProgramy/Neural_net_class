@@ -4,7 +4,7 @@ Neural net class abstracts most of the boilerplate code required to create neura
 # How to use
 Clone the repo, include class in your project and install requirements:
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 Create neural net with 8 input neurons, 2 output neurons and two layer with 32 and 16 neurons:
 ```python
