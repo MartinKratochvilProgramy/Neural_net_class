@@ -1,7 +1,10 @@
 # Neural net class
 Neural net class abstracts most of the boilerplate code required to create neural net using keras library. By default code uses 'adam' optimizer, ReLU activation function and mean-squared error. Definitions can be changed in the __init__ method.
 # How to use
-Clone the repo and include class in your project.
+Clone the repo, include class in your project and install requirements:
+```
+pip install -r requirements
+```
 Create neural net with 8 input neurons, 2 output neurons and two layer with 32 and 16 neurons:
 ```python
 nn = Neural_net(8, (32, 16), 2) 
