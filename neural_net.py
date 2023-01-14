@@ -1,9 +1,7 @@
 from sklearn.model_selection import train_test_split
 from sklearn.utils import shuffle
 import keras
-import tensorflow as tf
 import csv
-import numpy as np
 import matplotlib.pyplot as plt
 
 class Neural_net:
@@ -74,10 +72,10 @@ class Neural_net:
             self.history = self.model.fit(self.input_data_train, self.output_data_train, epochs=epochs, verbose=1, batch_size=16)
 
         #plot training
-        plt.plot(self.history.history['mape']) #'mape'
+        plt.plot(self.history.history['mape'])
+        plt.title(f"MAPE {round(self.history.history['mape'][-1], 2)}%")
         plt.xlabel('Epochs')
         plt.ylabel('Mean Absolute Percentage Error [%]')
-        #plt.ylim((10**0,40))
         plt.yscale('log')
         plt.grid()
         if savefig_name is not None:
